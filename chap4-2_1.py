@@ -6,7 +6,7 @@ input1 = int(raw_input1)
 input2 = int(raw_input2)
 
 total = input1 + input2
-print("두 수의 합은 %s 입니다" % total)
+print("두 수의 합은 % 입니다" % total)
 
 
 # input은 항상 str값으로 받는다.
