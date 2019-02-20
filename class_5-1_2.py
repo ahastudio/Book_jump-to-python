@@ -7,11 +7,10 @@ class Calculator:
 
 class MaxLimitCalculator(Calculator):
     def add(self, val):
-        if self.value + val >= 100:
+        super().add(val)
+        if self.value > 100:
             self.value = 100
-        else:
-            self.value += val
-
+        
 
 cal = MaxLimitCalculator()
 cal.add(50)
