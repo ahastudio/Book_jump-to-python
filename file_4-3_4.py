@@ -1,10 +1,23 @@
 # 4-3 Q4
 
-with open("C:/Users/15U560/Desktop/2019-1/python/workspace/pythonbook/test.txt", 'r') as f1:
-    whole_data = f1.read()
-    each_data = whole_data.split(' ')
-    each_data[-1] = "python"
+with open("./test.txt", 'r') as f:
+    data = f.read()
+    
+converted = data.replace('java', 'python')
+    
+with open("./test.txt", 'w') as f:
+    f.write(converted)
+    
+    
+# TEXT_FILE_PATH = "./test.txt"
 
-with open("C:/Users/15U560/Desktop/2019-1/python/workspace/pythonbook/test.txt", 'w') as f2:
-    new_data = ' '.join(each_data)
-    f2.write(new_data)
+# def read_file():
+#     with open(TEXT_FILE_PATH, 'r') as f:
+#         return f.read()
+    
+# def write_file(text):
+#     with open(TEXT_FILE_PATH, 'w') as f:
+#         f.write(text)
+        
+# text = read_file()
+# write_file(text.replace('java', 'python'))
